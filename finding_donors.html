@@ -15595,7 +15595,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </li>
 <li><p>What makes this model a good candidate for the problem: It is a good candidate because in our data we have a lot of features, and it is a classification problem.</p>
 </li>
-<li><p>References: <a href="https://en.wikipedia.org/wiki/Support_vector_machine">https://en.wikipedia.org/wiki/Support_vector_machine</a></p>
+<li><p>References: <a href="https://en.wikipedia.org/wiki/Support_vector_machine">https://en.wikipedia.org/wiki/Support_vector_machine</a> , <a href="https://www.quora.com/What-are-the-advantages-of-LinearSVC-Support-Vector-Classifier-algorithms">https://www.quora.com/What-are-the-advantages-of-LinearSVC-Support-Vector-Classifier-algorithms</a> , <a href="https://machinelearningmastery.com/boosting-and-adaboost-for-machine-learning/#:~:text=AdaBoost%20can%20be%20used%20to,decision%20trees%20with%20one%20level">https://machinelearningmastery.com/boosting-and-adaboost-for-machine-learning/#:~:text=AdaBoost%20can%20be%20used%20to,decision%20trees%20with%20one%20level</a>.</p>
 </li>
 </ul>
 </li>
@@ -15610,9 +15610,11 @@ It is a ratio of true positives(words classified as spam, and which are actually
 
 <pre><code>  * Weaknesses: Gradient Boosting Models will continue improving to minimize all errors. This can overemphasize outliers and cause overfitting, The high flexibility results in many parameters that interact and influence heavily the behavior of the approach (number of iterations, tree depth, regularization parameters, etc.). This requires a large grid search during tuning.
 
+
   * What makes this model a good candidate for the problem: It is a good candidate because it is a classification problem, and it can be used for both linear and non-linear problems.
 
   * References: https://en.wikipedia.org/wiki/Gradient_boosting , https://blog.paperspace.com/gradient-boosting-for-classification/
+
 
 </code></pre>
 <p><strong>AdaBoost Classifier</strong></p>
@@ -15623,7 +15625,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </li>
 <li><p>Weaknesses: AdaBoost weaknesses are that it is sensitive to noisy data and outliers, and that it can be prone to overfitting.</p>
 </li>
-<li><p>What makes this model a good candidate for the problem: we will be able to perform multiple quick trainining iterations to maximize our overall accuracy on the unseen testing data.</p>
+<li><p>What makes this model a good candidate for the problem: AdaBoost can be used in our case to improve the accuracy of classifiers hence making it flexible.</p>
 </li>
 <li><p>References: <a href="https://en.wikipedia.org/wiki/AdaBoost">https://en.wikipedia.org/wiki/AdaBoost</a> , <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/</a></p>
 </li>
@@ -15917,9 +15919,8 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <p><strong> HINT: </strong></p>
 <p>When explaining your model, if using external resources please include all citations.</p>
 <p><strong>Answer:</strong> 
-A gradient boosting model is a CHAIN of decision trees that also each make a vote. But instead of each learning in isolation, when you add a new one to the chain, it tries to improve a bit on what the rest of the chain already thinks. So, a new tree’s decision IS influenced by all the trees that have already voiced an opinion.</p>
-<p>The model is trained by adding trees to the chain, one at a time. Each new tree is trained to predict the errors of the previous trees. The model makes a prediction by adding up the predictions of all the trees in the chain.</p>
-<p><strong>references:</strong> <a href="https://en.wikipedia.org/wiki/Gradient_boosting">https://en.wikipedia.org/wiki/Gradient_boosting</a> , <a href="https://blog.paperspace.com/gradient-boosting-for-classification/">https://blog.paperspace.com/gradient-boosting-for-classification/</a></p>
+The model is trained by adding trees to the chain, one at a time. Each new tree is trained to predict the errors of the previous trees. The model makes a prediction by adding up the predictions of all the trees in the chain.</p>
+<p><strong>references:</strong> <a href="https://en.wikipedia.org/wiki/Gradient_boosting">https://en.wikipedia.org/wiki/Gradient_boosting</a> , <a href="https://blog.paperspace.com/gradient-boosting-for-classification/">https://blog.paperspace.com/gradient-boosting-for-classification/</a> , <a href="https://towardsdatascience.com/demystifying-decision-trees-random-forests-gradient-boosting-20415b0a406f">https://towardsdatascience.com/demystifying-decision-trees-random-forests-gradient-boosting-20415b0a406f</a></p>
 
 </div>
 </div>
@@ -16397,6 +16398,7 @@ the F-score and accuracy score on the reduced data using only five features are 
 <li>[8] <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.make_scorer.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.make_scorer.html</a></li>
 <li>[9] <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html</a></li>
 <li>[10] <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html">https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html</a></li>
+<li>[11] <a href="https://www.quora.com/What-is-an-intuitive-explanation-of-gradient-boosted-trees/answer/Roman-Trusov?srid=D7wp">https://www.quora.com/What-is-an-intuitive-explanation-of-gradient-boosted-trees/answer/Roman-Trusov?srid=D7wp</a></li>
 </ul>
 
 </div>
